@@ -3,7 +3,7 @@ function isValidShift(hours) {
 }
 
 function calculatePay(hours, rate) {
-   if (!isValidShift(hours) || hours === null) {
+  if (!isValidShift(hours) || hours === null || rate <= 0) {
     throw new Error('Invalid shift hours');
   }
   if (hours > 8) {
