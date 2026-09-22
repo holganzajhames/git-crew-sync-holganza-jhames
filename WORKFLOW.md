@@ -3,37 +3,37 @@
 ## Task 1: Push a change from Clone A
 Added overtime pay (time-and-a-half for shifts over 8 hours) to `calculatePay` in Clone A, committed, and pushed successfully.
 
-![Task 1 evidence](screenshots/task1.png)
+![Task 1 evidence](screenshots/tintin.png)
 
 ## Task 2: Diverge from Clone B — and get rejected
 In Clone B, made a conflicting change (rounding pay instead of truncating) without fetching first. The push was rejected because the remote already had Clone A's commit.
 
-![Task 2 evidence](screenshots/task2.png)
+![Task 2 evidence](screenshots/tintin2.png)
 
 ## Task 3: Reconcile with a merge
 Fetched and merged Clone A's change into Clone B, resolving the conflict so both the overtime calculation and the rounding behavior were preserved. Updated the test to match the new rounded output, confirmed tests passed, and pushed.
 
-![Task 3 evidence](screenshots/task3.png)
+![Task 3 evidence](screenshots/tintin3.png)
 
 ## Task 4: Diverge again — reconcile with a rebase
 In Clone A, made another change to `calculatePay` (added validation guards) without fetching first. The push was rejected again.
 
-![Task 4 rejection](screenshots/task4-reject.png)
+![Task 4 rejection](screenshots/tintin4.png)
 
 Resolved this one with `git fetch` + `git rebase` instead of a merge. Fixed the conflict, continued the rebase, confirmed tests passed, and pushed without needing to force.
 
-![Task 4 rebase resolution](screenshots/task4-rebase.png)
+![Task 4 rebase resolution](screenshots/tintin6.png)
 
 ## Task 5: Merge into main
 Merged the finished `feature/overtime-pay` branch into `main` and pushed.
 
-![Task 5 evidence](screenshots/task5.png)
+![Task 5 evidence](screenshots/tintin7.png)
 
 ## Task 6: Tag and write WORKFLOW.md
 Tagged the final commit `v1.0-synced` and pushed the tag.
 
-![Task 6 terminal](screenshots/task6-terminal.png)
-![Task 6 GitHub tags page](screenshots/task6-github.png)
+![Task 6 terminal](screenshots/tintin8.png)
+![Task 6 GitHub tags page](screenshots/tagss.png)
 
 ---
 
