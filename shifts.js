@@ -3,6 +3,9 @@ function isValidShift(hours) {
 }
 
 function calculatePay(hours, rate) {
+  if (!isValidShift(hours)) {
+    throw new Error('Invalid shift hours');
+  }
   if (hours > 8) {
     const regularPay = 8 * rate;
     const overtimePay = (hours - 8) * rate * 1.5;
